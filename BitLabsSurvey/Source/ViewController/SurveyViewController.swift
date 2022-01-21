@@ -18,7 +18,7 @@ class SurveyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        webView.frame = self.view.frame
+        webView = WKWebView(frame: self.view.frame)
         self.view.addSubview(webView)
         loadRequest()
     }
