@@ -18,6 +18,9 @@ class SurveyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(closeView))
+        self.navigationItem.rightBarButtonItem = doneItem
+        
         webView = WKWebView(frame: self.view.frame)
         self.view.addSubview(webView)
         loadRequest()
@@ -30,7 +33,7 @@ class SurveyViewController: UIViewController {
         }
     }
     
-    @IBAction func btnCloseTap(_ sender: Any) {
+    @objc func closeView() {
         self.dismiss(animated: true, completion: nil)
     }
 }
