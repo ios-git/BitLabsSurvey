@@ -26,7 +26,7 @@ public class BitLabsSurvey {
     public func showSurvey(viewController: UIViewController) {
         let surveyVC = SurveyViewController()
         let navigation = UINavigationController.init(rootViewController: surveyVC)
-        surveyVC.modalPresentationStyle = .fullScreen
+        navigation.modalPresentationStyle = .fullScreen
         viewController.present(navigation, animated: true, completion: nil)
     }
 }

@@ -34,6 +34,6 @@ class SurveyViewController: UIViewController {
     }
     
     @objc func closeView() {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.dismiss(animated: true, completion: nil)
     }
 }
