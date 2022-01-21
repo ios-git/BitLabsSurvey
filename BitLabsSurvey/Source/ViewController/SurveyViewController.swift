@@ -11,14 +11,14 @@ import WebKit
 
 class SurveyViewController: UIViewController {
     
-    var webView = WKWebView()
+    var webView : WKWebView!
     
     static let identifier = String(describing: SurveyViewController.self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = .red
+        webView.frame = self.view.frame
         self.view.addSubview(webView)
         loadRequest()
     }
