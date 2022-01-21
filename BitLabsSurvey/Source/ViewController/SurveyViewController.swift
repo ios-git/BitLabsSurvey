@@ -11,7 +11,7 @@ import WebKit
 
 class SurveyViewController: UIViewController {
     
-    @IBOutlet weak var webView: WKWebView!
+    var webView = WKWebView()
     
     static let identifier = String(describing: SurveyViewController.self)
     
@@ -19,6 +19,7 @@ class SurveyViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = .red
+        self.view.addSubview(webView)
         loadRequest()
     }
     

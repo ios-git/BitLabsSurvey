@@ -8,6 +8,7 @@
 import Foundation
 
 struct NetworkManager {
+    
     private static let baseURL = "https://api.bitlabs.ai/v1/client/check?platform=MOBILE&uid=1"
     private let apiKey: String
     private let uid: String
