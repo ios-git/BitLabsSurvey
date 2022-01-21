@@ -18,9 +18,8 @@ class SurveyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(closeView))
+        let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(closeView))
         self.navigationItem.rightBarButtonItem = doneItem
-        
         webView = WKWebView(frame: self.view.frame)
         self.view.addSubview(webView)
         loadRequest()

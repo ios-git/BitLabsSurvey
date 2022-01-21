@@ -20,6 +20,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8B42F6D3279AEB4C0070CE92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B42F6CE279AEB4C0070CE92 /* BitLabsSurvey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B715150279A7CD500EDB627;
+			remoteInfo = BitLabsSurvey;
+		};
+		8B42F6D5279AEB4C0070CE92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B42F6CE279AEB4C0070CE92 /* BitLabsSurvey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B71515A279A7CD500EDB627;
+			remoteInfo = BitLabsSurveyTests;
+		};
 		8B71515C279A7CD500EDB627 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8B715147279A7CD500EDB627 /* Project object */;
@@ -30,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B42F6CE279AEB4C0070CE92 /* BitLabsSurvey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BitLabsSurvey.xcodeproj; path = "../BitLabSurvey-Pod/BitLabsSurvey/BitLabsSurvey.xcodeproj"; sourceTree = "<group>"; };
 		8B715150279A7CD500EDB627 /* BitLabsSurvey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BitLabsSurvey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B715153279A7CD500EDB627 /* BitLabsSurvey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BitLabsSurvey.h; sourceTree = "<group>"; };
 		8B715154279A7CD500EDB627 /* BitLabsSurvey.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = BitLabsSurvey.docc; sourceTree = "<group>"; };
@@ -62,9 +77,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B42F6CF279AEB4C0070CE92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B42F6D4279AEB4C0070CE92 /* BitLabsSurvey.framework */,
+				8B42F6D6279AEB4C0070CE92 /* BitLabsSurveyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8B715146279A7CD500EDB627 = {
 			isa = PBXGroup;
 			children = (
+				8B42F6CE279AEB4C0070CE92 /* BitLabsSurvey.xcodeproj */,
 				8B715152279A7CD500EDB627 /* BitLabsSurvey */,
 				8B71515E279A7CD500EDB627 /* BitLabsSurveyTests */,
 				8B715151279A7CD500EDB627 /* Products */,
@@ -206,6 +231,12 @@
 			mainGroup = 8B715146279A7CD500EDB627;
 			productRefGroup = 8B715151279A7CD500EDB627 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8B42F6CF279AEB4C0070CE92 /* Products */;
+					ProjectRef = 8B42F6CE279AEB4C0070CE92 /* BitLabsSurvey.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8B71514F279A7CD500EDB627 /* BitLabsSurvey */,
@@ -213,6 +244,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8B42F6D4279AEB4C0070CE92 /* BitLabsSurvey.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BitLabsSurvey.framework;
+			remoteRef = 8B42F6D3279AEB4C0070CE92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8B42F6D6279AEB4C0070CE92 /* BitLabsSurveyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BitLabsSurveyTests.xctest;
+			remoteRef = 8B42F6D5279AEB4C0070CE92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8B71514E279A7CD500EDB627 /* Resources */ = {
